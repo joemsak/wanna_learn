@@ -8,8 +8,16 @@ gem 'rails', '3.2.2'
 gem 'sqlite3'
 
 group :test do
-  gem 'cucumber-rails'
+  gem 'cucumber-rails', :require => false
   gem 'rspec-rails'
+  gem 'database_cleaner'
+  gem 'vcr'
+  gem 'webmock'
+end
+
+group :development do
+  gem 'guard-spork'
+  gem 'guard-cucumber'
 end
 
 # Gems used only for assets and not required
