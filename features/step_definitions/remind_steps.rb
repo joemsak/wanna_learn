@@ -3,6 +3,6 @@ When /^I wanna learn (.*)$/ do |topic|
   @user.study_reminders.create!(:topic => topic)
 end
 
-Then /^the I should have a reminder to learn spanish$/ do
-  @user.study_reminders.collect(&:topic).should include('spanish')
+Then /^the I should have a reminder to study (.*)$/ do |topic|
+  @user.study_reminders.collect(&:topic).should include(topic)
 end
