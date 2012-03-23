@@ -1,4 +1,6 @@
-require 'spec_helper'
+require 'spec_no_rails_helper'
+require 'user'
+require 'study_reminder'
 
 describe User do
   describe "#studying_topics" do

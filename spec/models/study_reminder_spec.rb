@@ -1,4 +1,5 @@
-require 'spec_helper'
+require 'spec_no_rails_helper'
+require 'study_reminder'
 
 describe StudyReminder do
   it "sets reminders for topics" do
